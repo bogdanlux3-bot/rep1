@@ -24,7 +24,7 @@ section {
 }
 
 
-section:nth-child(4) {
+section:nth-child(2) {
     background-color: black;
 }
 section:nth-child(6) {
@@ -312,9 +312,22 @@ section:nth-child(6) {
     @media (max-width: 355px) {
         width: 320px;
     }
+  .avatar {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    @media (max-width: 475px) {
+        width: 440px;
+        height: 420px;
+    }
+    @media (max-width: 355px) {
+        width: 320px;
+        height: 275px;
+    }
+  }
 }
 .about-content {
-    //img
+  
     .header {
         text-align: left;
         @media (max-width: 475px) {
@@ -360,7 +373,6 @@ section:nth-child(6) {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    
 }
 
 .project {
@@ -407,6 +419,10 @@ section:nth-child(6) {
         margin-right: auto;
     }
 }
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
 
 .project:nth-child(even) {
     .project-image {
@@ -416,7 +432,59 @@ section:nth-child(6) {
        }
     }
 }
-
+ .contact-form {
+        width: 495px;
+    }
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-form input {
+        padding: 12px;
+        margin-bottom: 10px;
+        border: 2px solid #00000099;
+        border-radius: 4px;
+        outline: none;
+        font-size: 14px;
+    }
+    .contact-form textarea {
+        
+        height: 200px;
+        border: 1px solid #00000099;
+        border-radius: 8px;
+    }
+    .contact-form button {
+        background-color: #000;
+        color: #FFF;
+        padding: 12px;
+        border: none;   
+        border-radius: 6px;
+        font-weight: 800;
+        width: 143px;
+    }
+    .socials {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+    }
+    .footer-card {
+        width: 64px;
+        height: 64px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        @media (max-width: 725px) {
+            width: 48px;
+            height: 48px;
+            font-size: 27px;
+        }
+        i {
+            font-size: 40px;
+        }
+    }
+    
 .contacts {
     flex-shrink: 1;
     flex-grow: 2;
