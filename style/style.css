@@ -18,7 +18,7 @@ section {
   }
 }
 
-section:nth-child(2) {
+section:nth-child(4) {
   background-color: black;
 }
 
@@ -341,7 +341,6 @@ section:nth-child(6) {
   display: flex;
   justify-content: space-between;
   gap: 123px;
-  flex-wrap: wrap;
 }
 @media (max-width: 1275px) {
   .about {
@@ -368,23 +367,6 @@ section:nth-child(6) {
 @media (max-width: 355px) {
   .about {
     width: 320px;
-  }
-}
-.about .avatar {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-@media (max-width: 475px) {
-  .about .avatar {
-    width: 440px;
-    height: 420px;
-  }
-}
-@media (max-width: 355px) {
-  .about .avatar {
-    width: 320px;
-    height: 275px;
   }
 }
 
@@ -527,11 +509,43 @@ section:nth-child(6) {
   outline: none;
   font-size: 14px;
 }
+@media (max-width: 955px) {
+  .contact-form input {
+    width: 880px;
+    height: 57px;
+  }
+}
+@media (max-width: 475px) {
+  .contact-form input {
+    width: 440px;
+  }
+}
+@media (max-width: 355px) {
+  .contact-form input {
+    width: 320px;
+  }
+}
 
 .contact-form textarea {
   height: 200px;
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-radius: 8px;
+}
+@media (max-width: 955px) {
+  .contact-form textarea {
+    width: 880px;
+    height: 200px;
+  }
+}
+@media (max-width: 475px) {
+  .contact-form textarea {
+    width: 440px;
+  }
+}
+@media (max-width: 355px) {
+  .contact-form textarea {
+    width: 320px;
+  }
 }
 
 .contact-form button {
@@ -543,11 +557,32 @@ section:nth-child(6) {
   font-weight: 800;
   width: 143px;
 }
+@media (max-width: 955px) {
+  .contact-form button {
+    width: 528px;
+    height: 64px;
+  }
+}
+@media (max-width: 355px) {
+  .contact-form button {
+    width: 320px;
+    height: 54px;
+  }
+}
 
 .socials {
   margin-top: 10px;
   display: flex;
   gap: 10px;
+}
+@media (max-width: 475px) {
+  .socials {
+    flex-wrap: wrap;
+  }
+}
+
+.footer-btn {
+  display: flex;
 }
 
 .footer-card {
@@ -584,11 +619,61 @@ section:nth-child(6) {
   color: rgba(0, 0, 0, 0.6);
   line-height: 24px;
 }
+@media (max-width: 955px) {
+  .contacts {
+    width: 880px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 475px) {
+  .contacts {
+    font-size: 15px;
+    width: 440px;
+  }
+}
+@media (max-width: 355px) {
+  .contacts {
+    width: 320px;
+    font-size: 15px;
+  }
+}
 
 .call-me {
   display: flex;
   justify-content: space-between;
   gap: 123px;
+  flex-wrap: wrap;
+}
+@media (max-width: 1275px) {
+  .call-me {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 1275px) {
+  .call-me {
+    width: 1216px;
+  }
+}
+@media (max-width: 955px) {
+  .call-me {
+    width: 880px;
+  }
+}
+@media (max-width: 725px) {
+  .call-me {
+    width: 646px;
+  }
+}
+@media (max-width: 475px) {
+  .call-me {
+    width: 480px;
+  }
+}
+@media (max-width: 355px) {
+  .call-me {
+    width: 320px;
+  }
 }
 
 .email,
